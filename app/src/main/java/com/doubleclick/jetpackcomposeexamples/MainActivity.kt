@@ -24,6 +24,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.doubleclick.jetpackcomposeexamples.Image.ImageActivity
 import com.doubleclick.jetpackcomposeexamples.button.MaterialButtonActivity
 import com.doubleclick.jetpackcomposeexamples.card.CardExampleActivity
 import com.doubleclick.jetpackcomposeexamples.clickable.ClickableExampleActivity
@@ -74,8 +75,8 @@ class MainActivity : ComponentActivity() {
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, ImageActivity::class.java),
+                            "click ImageActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
