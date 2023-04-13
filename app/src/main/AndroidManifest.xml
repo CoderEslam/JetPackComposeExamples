@@ -10,8 +10,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JetPackComposeExamples"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".dialog.AlertDialogActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".customview.CustomViewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".clickable.ClickableExampleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".card.CardExampleActivity"
             android:exported="false"

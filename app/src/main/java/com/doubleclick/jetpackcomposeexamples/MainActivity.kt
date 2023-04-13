@@ -26,6 +26,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.doubleclick.jetpackcomposeexamples.button.MaterialButtonActivity
 import com.doubleclick.jetpackcomposeexamples.card.CardExampleActivity
+import com.doubleclick.jetpackcomposeexamples.clickable.ClickableExampleActivity
+import com.doubleclick.jetpackcomposeexamples.customview.CustomViewActivity
+import com.doubleclick.jetpackcomposeexamples.dialog.AlertDialogActivity
 import com.doubleclick.jetpackcomposeexamples.ui.theme.JetPackComposeExamplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,7 +40,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = Color.White
                 ) {
                     Column(
                         modifier = Modifier
@@ -56,18 +59,18 @@ class MainActivity : ComponentActivity() {
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, ClickableExampleActivity::class.java),
+                            "ClickableExampleActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, CustomViewActivity::class.java),
+                            "click CustomViewActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, AlertDialogActivity::class.java),
+                            "click Alert Dialog Activity"
                         )
                         ButtonComponent(
                             this@MainActivity,
