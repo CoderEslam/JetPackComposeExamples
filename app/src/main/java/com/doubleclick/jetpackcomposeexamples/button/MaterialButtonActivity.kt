@@ -69,7 +69,7 @@ class MaterialButtonActivity : ComponentActivity() {
 }
 
 @Composable
-fun SimpleTextComponent(text: String) {
+private fun SimpleTextComponent(text: String) {
     Text(
         text = text,
         style = TextStyle(

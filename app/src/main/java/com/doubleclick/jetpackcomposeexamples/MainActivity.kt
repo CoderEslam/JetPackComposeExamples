@@ -31,6 +31,8 @@ import com.doubleclick.jetpackcomposeexamples.clickable.ClickableExampleActivity
 import com.doubleclick.jetpackcomposeexamples.customview.CustomViewActivity
 import com.doubleclick.jetpackcomposeexamples.dialog.AlertDialogActivity
 import com.doubleclick.jetpackcomposeexamples.layout.*
+import com.doubleclick.jetpackcomposeexamples.materialdesign.MaterialAppBarActivity
+import com.doubleclick.jetpackcomposeexamples.materialdesign.MaterialBottomNavigationActivity
 import com.doubleclick.jetpackcomposeexamples.ui.theme.JetPackComposeExamplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -106,13 +108,13 @@ class MainActivity : ComponentActivity() {
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, MaterialAppBarActivity::class.java),
+                            "click MaterialAppBarActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, MaterialBottomNavigationActivity::class.java),
+                            "click MaterialBottomNavigationActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
