@@ -48,7 +48,7 @@ class ImageActivity : AppCompatActivity() {
 fun SimpleImageComponent() {
     Column(modifier = Modifier.padding(16.dp)) {
         Image(
-            imageVector = ImageVector.vectorResource(id = R.drawable.favorite),
+            painter = painterResource(id = R.drawable.p1),
             contentDescription = ""
         )
     }

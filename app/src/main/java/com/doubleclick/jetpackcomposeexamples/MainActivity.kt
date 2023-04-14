@@ -30,6 +30,7 @@ import com.doubleclick.jetpackcomposeexamples.card.CardExampleActivity
 import com.doubleclick.jetpackcomposeexamples.clickable.ClickableExampleActivity
 import com.doubleclick.jetpackcomposeexamples.customview.CustomViewActivity
 import com.doubleclick.jetpackcomposeexamples.dialog.AlertDialogActivity
+import com.doubleclick.jetpackcomposeexamples.layout.*
 import com.doubleclick.jetpackcomposeexamples.ui.theme.JetPackComposeExamplesTheme
 
 class MainActivity : ComponentActivity() {
@@ -80,28 +81,28 @@ class MainActivity : ComponentActivity() {
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, BoxActivity::class.java),
+                            "click Box Activity"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, LazyColumnActivity::class.java),
+                            "click LazyColumnActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, LazyRowActivity::class.java),
+                            "click LazyRowActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, ScrollableColumnComponent::class.java),
+                            "click ScrollableColumnComponent"
                         )
                         ButtonComponent(
                             this@MainActivity,
-                            Intent(this@MainActivity, MaterialButtonActivity::class.java),
-                            "click button"
+                            Intent(this@MainActivity, ScrollableRowActivity::class.java),
+                            "click ScrollableRowActivity"
                         )
                         ButtonComponent(
                             this@MainActivity,
